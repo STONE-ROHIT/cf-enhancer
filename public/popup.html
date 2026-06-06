@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF Enhancer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <div class="logo">CF</div>
+        <div class="header-text">
+          <div class="title">CF Enhancer</div>
+          <div class="subtitle">Enhanced Codeforces Analytics</div>
+        </div>
+      </div>
+
+      <div class="search-section">
+        <div class="search-label">Search any user</div>
+        <div class="search-row">
+          <input
+            type="text"
+            id="handle-input"
+            class="search-input"
+            placeholder="Enter handle..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button id="search-btn" class="search-btn">→</button>
+        </div>
+        <div id="error-msg" class="error-msg hidden">Please enter a handle</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="current-section">
+        <div class="current-label">On current tab</div>
+        <button id="current-btn" class="current-btn">View Enhanced Profile</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
